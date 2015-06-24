@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//DOES THIS WORK?
 
 class BubblesB {
     var bubblelist = [(Int,Int, String)]()
