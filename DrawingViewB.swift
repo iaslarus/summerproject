@@ -1,8 +1,8 @@
-//
 //  DrawingViewB.swift
 //  Drawing-Test-3
 //
 //  Created by School on 6/23/15.
+//  Created by School on 6/24/15.
 //  Copyright (c) 2015 Saman. All rights reserved.
 //
 

@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Drawing-Test-3
-//
-//  Created by Saman Amarasinghe on 4/20/15.
-//  Copyright (c) 2015 Saman. All rights reserved.
-//
-
 import UIKit
 
 var stop:Bool = false
@@ -19,9 +11,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
+    
     @IBOutlet weak var resultLabel: UILabel!
     
-    @IBAction func StartButton() {
+    @IBAction func StartButton(sender: AnyObject) {
+        
         println("button A clicked")
         if drawingView !== nil {
             drawingView.removeFromSuperview()
@@ -50,6 +44,8 @@ class ViewController: UIViewController {
         resultText = ""
         
     }
+    
+    
     @IBAction func StartB(sender: AnyObject) {
         
         println("button B clicked")
@@ -85,12 +81,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
     }
     
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.Landscape.rawValue)
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -118,7 +115,6 @@ class ViewController: UIViewController {
         resultLabel.text = resultText
         
     }
-
-
+    
+    
 }
-

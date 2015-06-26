@@ -1,3 +1,4 @@
+
 //
 //  BubblesB.swift
 //  Drawing-Test-3
@@ -64,7 +65,7 @@ class BubblesB {
             bubblelist.append((970, 145, "13"))
             
         }
-        
+            
         else{
             bubblelist.append((490, 325, "1"))
             bubblelist.append((750, 175, "A"))

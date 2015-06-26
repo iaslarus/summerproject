@@ -14,7 +14,7 @@ import UIKit
 class SwiftDrawView: UIView {
     private var path = UIBezierPath()
     private var bubbles = Bubbles()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -55,6 +55,8 @@ class SwiftDrawView: UIView {
     }
     
     func drawBubble(bubble:(Int, Int, String)) {
+        println("in drawbubble")
+        
         let (x, y, name) = bubble
         //println("Bubble \(bubble)")
         
@@ -127,7 +129,7 @@ class SwiftDrawView: UIView {
     bubbles.inNewBubble(touch.locationInView(self).x, y:touch.locationInView(self).y)
     
     }
-*/
+    */
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         //println("Touch Ended")
